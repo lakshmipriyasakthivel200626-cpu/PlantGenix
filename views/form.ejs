@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plant Health Form</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h2 class="title">🌿 Enter Plant Details</h2>
+
+  <div class="form-card">
+    <form action="/result" method="post">
+
+      <input type="text" name="plantName" placeholder="🌱 Plant Name" required>
+
+      <select name="leafColor" required>
+        <option value="">🍃 Leaf Color</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="brown">Brown</option>
+      </select>
+
+      <select name="sunlight" required>
+        <option value="">☀ Sunlight Level</option>
+        <option value="high">High</option>
+        <option value="low">Low</option>
+      </select>
+
+      <select name="water" required>
+        <option value="">💧 Watering</option>
+        <option value="high">High</option>
+        <option value="low">Low</option>
+      </select>
+
+      <select name="stage" required>
+        <option value="">🌼 Growth Stage</option>
+        <option value="seedling">Seedling</option>
+        <option value="mature">Mature</option>
+      </select>
+
+      <button type="submit" class="analyze-btn">Analyze 🌱</button>
+    </form>
+  </div>
+</body>
+</html>
